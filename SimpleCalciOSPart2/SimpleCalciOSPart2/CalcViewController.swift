@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     private var numbers: [Int] = []
     private var allNumbers: [Int] = []
+    private var history: [String] = []
     private var left: Int = 0
     private var right: Int = 0
     private var operand: String = ""
@@ -153,17 +154,20 @@ class ViewController: UIViewController {
     
     @IBAction func equals(_ sender: AnyObject) {
         self.right = self.sum()
+        var total = 0;
         if self.operand == "+" {
-            self.changeLabel(left + right)
+            total = left + right
         } else if self.operand == "-" {
-            self.changeLabel(left - right)
+            total = left - right
         } else if self.operand == "*" {
-            self.changeLabel(left * right)
+            total = left * right
         } else if self.operand == "/" {
-            self.changeLabel(left / right)
+            total = left / right
         } else if self.operand == "%" {
-            self.changeLabel(left % right)
+            total = left % right
         }
+        self.changeLabel(total)
+        history.insert("\(left) \(operand) \(right) = \(total)", at: 0)
         allNumbers.append(left)
         allNumbers.append(right)
     }
@@ -193,6 +197,7 @@ class ViewController: UIViewController {
     @IBAction func clear(_ sender: AnyObject) {
         numbers.removeAll()
         allNumbers.removeAll()
+        history.removeAll()
         self.changeLabel()
         self.left = 0
         self.right = 0

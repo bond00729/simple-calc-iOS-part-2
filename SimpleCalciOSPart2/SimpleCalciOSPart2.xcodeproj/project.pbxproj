@@ -14,6 +14,7 @@
 		C9F2DC1C1DC2A52A006B283F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F2DC1A1DC2A52A006B283F /* LaunchScreen.storyboard */; };
 		C9F2DC271DC2A52B006B283F /* SimpleCalciOSPart2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F2DC261DC2A52B006B283F /* SimpleCalciOSPart2Tests.swift */; };
 		C9F2DC321DC2A52B006B283F /* SimpleCalciOSPart2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F2DC311DC2A52B006B283F /* SimpleCalciOSPart2UITests.swift */; };
+		C9F2DC401DC69CFE006B283F /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F2DC3F1DC69CFE006B283F /* HistoryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C9F2DC2D1DC2A52B006B283F /* SimpleCalciOSPart2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleCalciOSPart2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F2DC311DC2A52B006B283F /* SimpleCalciOSPart2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCalciOSPart2UITests.swift; sourceTree = "<group>"; };
 		C9F2DC331DC2A52B006B283F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9F2DC3F1DC69CFE006B283F /* HistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				C9F2DC111DC2A52A006B283F /* AppDelegate.swift */,
 				C9F2DC131DC2A52A006B283F /* CalcViewController.swift */,
+				C9F2DC3F1DC69CFE006B283F /* HistoryTableViewController.swift */,
 				C9F2DC151DC2A52A006B283F /* Main.storyboard */,
 				C9F2DC181DC2A52A006B283F /* Assets.xcassets */,
 				C9F2DC1A1DC2A52A006B283F /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 			files = (
 				C9F2DC141DC2A52A006B283F /* CalcViewController.swift in Sources */,
 				C9F2DC121DC2A52A006B283F /* AppDelegate.swift in Sources */,
+				C9F2DC401DC69CFE006B283F /* HistoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +518,7 @@
 				C9F2DC381DC2A52B006B283F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9F2DC391DC2A52B006B283F /* Build configuration list for PBXNativeTarget "SimpleCalciOSPart2Tests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				C9F2DC3B1DC2A52B006B283F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9F2DC3C1DC2A52B006B283F /* Build configuration list for PBXNativeTarget "SimpleCalciOSPart2UITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +536,7 @@
 				C9F2DC3E1DC2A52B006B283F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

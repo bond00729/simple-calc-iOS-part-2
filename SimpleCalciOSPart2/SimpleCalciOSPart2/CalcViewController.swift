@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     
     private var numbers: [Int] = []
     private var allNumbers: [Int] = []
-    private var history: [String] = []
     private var left: Int = 0
     private var right: Int = 0
     private var operand: String = ""
@@ -167,7 +166,15 @@ class ViewController: UIViewController {
             total = left % right
         }
         self.changeLabel(total)
-        history.insert("\(left) \(operand) \(right) = \(total)", at: 0)
+        
+        let defaults = UserDefaults.standard
+        var history = defaults.array(forKey: "history")
+        if history == nil {
+            history = Array()
+        }
+        history!.append("\(left) \(operand) \(right) = \(total)")
+        defaults.set(history, forKey: "history")
+        
         allNumbers.append(left)
         allNumbers.append(right)
     }
@@ -197,7 +204,6 @@ class ViewController: UIViewController {
     @IBAction func clear(_ sender: AnyObject) {
         numbers.removeAll()
         allNumbers.removeAll()
-        history.removeAll()
         self.changeLabel()
         self.left = 0
         self.right = 0

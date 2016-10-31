@@ -55,7 +55,7 @@ class HistoryTableViewController: UITableViewController {
 
         // Configure the cell...
         let currentCell = self.history[indexPath.row]
-        cell.textLabel?.text = currentCell as! String
+        cell.textLabel?.text = currentCell as? String
         
         return cell
     }

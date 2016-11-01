@@ -36,7 +36,7 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DeR-Sb-EYj" id="TWL-9M-NXA">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -65,10 +65,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Na1-R9-ioS">
-                                <rect key="frame" x="0.0" y="20" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="167"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" red="0.98704957956597084" green="0.98222193425964299" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.98896394152823142" green="0.99547365206911165" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWs-FH-ftX">
@@ -335,7 +335,7 @@
                             <constraint firstItem="jdu-HB-ODI" firstAttribute="width" secondItem="Ili-H3-pvG" secondAttribute="width" id="KQw-xk-yJ0"/>
                             <constraint firstItem="TYP-sN-Do6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.125" id="LSX-48-rUe"/>
                             <constraint firstItem="geB-rO-7ZB" firstAttribute="top" secondItem="ATF-Pf-71Y" secondAttribute="bottom" id="Mg1-9b-FIA"/>
-                            <constraint firstItem="Na1-R9-ioS" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" identifier="0.25" id="N6d-rT-pKt"/>
+                            <constraint firstItem="Na1-R9-ioS" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="N6d-rT-pKt"/>
                             <constraint firstItem="jdu-HB-ODI" firstAttribute="height" secondItem="Ili-H3-pvG" secondAttribute="height" id="OcD-h8-KCE"/>
                             <constraint firstItem="kgu-ad-YuQ" firstAttribute="height" secondItem="Q8F-3U-vIg" secondAttribute="height" id="Oow-qi-IFY"/>
                             <constraint firstItem="Oqh-qr-ybO" firstAttribute="top" secondItem="lbk-0J-wFh" secondAttribute="bottom" id="Opg-Il-sd4"/>
